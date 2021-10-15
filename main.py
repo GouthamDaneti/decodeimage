@@ -28,9 +28,9 @@ def printSeq(compArr):
 		data = line.split()
 		char = data.pop(0)
 		for x in data:
-			if (first != True):
-				print()
-			first = True
+			if not first:
+        			print("\n", end='')
+			first = False
 			printCurrChar(char, x)
 			if (char == '#'):
 				char = '.'
