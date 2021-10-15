@@ -27,15 +27,17 @@ def printSeq(compArr):
 		#print(line)
 		data = line.split()
 		char = data.pop(0)
+		if not first:
+        		print("\n", end='')
+		first = False
 		for x in data:
-			if not first:
-        			print("\n", end='')
-			first = False
 			printCurrChar(char, x)
 			if (char == '#'):
 				char = '.'
 			else:
 				char = '#'
+	print("\n", end='')
+	#print("\n", end='')
 
 
 def printCurrChar(char, x):
