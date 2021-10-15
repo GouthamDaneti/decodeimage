@@ -22,17 +22,20 @@ def printTheSeq(numOfLine):
 		
 
 def printSeq(compArr):
+	first = True
 	for line in compArr:
 		#print(line)
 		data = line.split()
 		char = data.pop(0)
 		for x in data:
+			if (first != True):
+				print()
+			first = True
 			printCurrChar(char, x)
 			if (char == '#'):
 				char = '.'
 			else:
 				char = '#'
-		print()
 
 
 def printCurrChar(char, x):
