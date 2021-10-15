@@ -10,7 +10,7 @@ def main():
     	#print(currNumLines)
     	#print('yo 002')
     	printTheSeq(currNumLines, isFirstLine)
-	isFirstLine = False
+    	isFirstLine = False
 
 def printTheSeq(numOfLine, isFirstLine):
 	compArr = []
@@ -20,7 +20,7 @@ def printTheSeq(numOfLine, isFirstLine):
 		compArr.append(char)
 	printSeq(compArr, isFirstLine)
 	if (validate(compArr) != True):
-		print('Error decoding image!')
+		print('Error decoding image')
 		
 
 def printSeq(compArr, isFirstLine):
@@ -36,13 +36,10 @@ def printSeq(compArr, isFirstLine):
 				char = '.'
 			else:
 				char = '#'
-	print("\n", end='')
-	#print("\n", end='')
-
+		print("\n", end='')
 
 def printCurrChar(char, x):
-	for i in range(int(x)):
-		print(char, end="")
+	print(char * int(x), end='')
 
 def validate(compArr):
 	prevTotal = 0
