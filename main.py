@@ -37,6 +37,7 @@ def printSeq(compArr):
 			else:
 				char = '#'
 	print("\n", end='')
+	print("\n", end='')
 	#print("\n", end='')
 
 
